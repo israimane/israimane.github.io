@@ -1,0 +1,124 @@
+    /* ----------- STYLE DE BASE ----------- */
+    body {
+      background-color: #d2b48c;
+      font-family: "Poppins", sans-serif;
+      color: #3e2723;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    /* ----------- EN-TÊTE DE PAGE ----------- */
+    header {
+      background-color: #8b5a2b;
+      color: white;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* ajout d'une ombre sous la partie d'en-tête */
+    }
+
+
+
+    /* ----------- SECTION IMAGES DU ROBOT ----------- */
+    .robot-images {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap; /* Permet le retour à la ligne si l'écran est trop petit pour les deux images */
+    }
+
+    .robot-images img {
+      width: 200px;
+      border-radius: 20px; /* bord arrondie */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    /* ----------- BOUTONS DE COMMANDE ----------- */
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 15px;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .btn {
+      background-color: #a0522d;
+      border: none;
+      border-radius: 15px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+
+    /* Positionnement des boutons */
+    .btn-up { grid-column: 2; grid-row: 1; }
+    .btn-left { grid-column: 1; grid-row: 2; }
+/*    .btn-stop { grid-column: 2; grid-row: 2; } */
+    .btn-right { grid-column: 3; grid-row: 2; }
+/*  .btn-down { grid-column: 2; grid-row: 3; } */
+
+
+    .btn:active {
+      background-color: #4caf50;
+    }
+
+   /* .btn:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+      color: #666;
+      box-shadow: none;
+    }
+
+    /* Bouton STOP actif */
+  /*  .btn-stop.active {
+        background-color: red !important;
+        box-shadow: 0 0 20px red;
+      }
+
+   
+   /* ----------- BATTERIE ----------- */
+    .battery-container {
+      width: 250px;
+      height: 100px;
+      border: 5px solid #3e2723;
+      border-radius: 10px;
+      margin: 20px auto;
+      position: relative;
+      background-color: #fff;
+    }
+
+    .battery-level {
+      height: 100%;
+      width: 100%;
+      background-color: green;
+      border-radius: 5px;
+    }
+
+    .battery-text {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+
+
+    /* ----------- GRAPHIQUE ----------- */
+    .chart-container {
+      width: 80%;
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #fff8dc;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+
