@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!--indique que le document est en html5 -->
+<html lang="fr"> <!--debut du document + précision qu'il est en français-->
+<head>
+  <meta charset="UTF-8" /> <!-- permet d'afficher des caractères spéciaux -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- rend la page adaptable a chaque écran -->
+  <title>Robot Jerry - Tableau de bord</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+
+
+  <header>Contrôle du Robot Jerry</header>
+
+  <!-- SECTION IMAGES DU ROBOT -->
+  <section class="robot-images">
+    <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt="Robot Jerry prototype">
+    <img src="https://example.com/robot-fini.jpg" alt="à venir">
+  </section>
+
+
+
+  <!-- SECTION DES COMMANDES -->
+  <section class="controls">
+    <button class="btn btn-up" onclick="envoyerCommande('avancer')"> Avant</button>
+    <button class="btn btn-left" onclick="envoyerCommande('gauche')"> Gauche</button>
+<!--<button class="btn btn-stop" onclick="toggleStop()">STOP</button> -->
+    <button class="btn btn-right" onclick="envoyerCommande('droite')"> Droite</button>
+<!-- <button class="btn btn-down" onclick="envoyerCommande('arriere')"> Arrière</button> -->
+  </section>
+
+
+  <!-- SECTION DE LA BATTERIE -->
+  <section>
+    <div class="battery-container">
+      <div id="battery-level" class="battery-level"></div>
+    </div>
+    <div id="battery-text" class="battery-text">Batterie : --%</div>
+  </section>
+
+
+
+  <!-- SECTION DU GRAPHIQUE -->
+  <div class="chart-container">
+    <canvas id="powerChart"></canvas>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
