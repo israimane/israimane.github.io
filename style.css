@@ -82,6 +82,29 @@
         background-color: red !important;
         box-shadow: 0 0 20px red;
       }
+    /* ----------- SECTION CAMÉRA ----------- */
+.camera-section {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.camera-feed {
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.camera-feed img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
    
    /* ----------- BATTERIE ----------- */
