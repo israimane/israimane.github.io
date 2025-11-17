@@ -1,0 +1,140 @@
+/* ----------- STYLE DE BASE ----------- */
+body {
+    background-color: #d2b48c;
+    font-family: "Poppins", sans-serif;
+    color: #3e2723;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- EN-TÊTE DE PAGE ----------- */
+header {
+    background-color: #8b5a2b;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ----------- SECTION IMAGES DU ROBOT ----------- */
+.robot-images {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.robot-images img {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ----------- JOYSTICK ----------- */
+#joystick-container {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#stick {
+    width: 60px;
+    height: 60px;
+    background: #aaa;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+
+/* ----------- SECTION CAMÉRA ----------- */
+.camera-section {
+    background-color: #d2b48c;
+    color: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+
+.camera-feed {
+    background-color: #d2b48c;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.camera-feed img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ----------- BOUTONS DE COMMANDE ----------- */
+.controls {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 15px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.btn {
+    background-color: #a0522d;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-up { grid-column: 2; grid-row: 1; }
+.btn-left { grid-column: 1; grid-row: 2; }
+.btn-dance { grid-column: 2; grid-row: 2; }
+.btn-right { grid-column: 3; grid-row: 2; }
+.btn-down { grid-column: 2; grid-row: 3; }
+
+.btn:active {
+    background-color: #4caf50;
+}
+
+/* ----------- BATTERIE ----------- */
+.battery-container {
+    width: 250px;
+    height: 100px;
+    border: 5px solid #3e2723;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: relative;
+    background-color: #fff;
+}
+
+.battery-level {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.battery-text {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ----------- GRAPHIQUE ----------- */
+.chart-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff8dc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
